@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    app: myapp
+spec:
+  containers:
+    - name: mycontainer
+      image: nginx:latest
+      volumeMounts:
+        - name: configfile
+          mountPath: /etc/configmap
+  volumes:
+    - name: configfile
+      configMap:
+        name: girishconfig   

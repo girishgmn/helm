@@ -1,0 +1,10 @@
+deploy_name: my-tomcat
+app_name: myapp
+container_name: tomcat-app
+template_name: tomcat1
+image_name: tomcat
+image_version: 9.0
+service_name: my-tomcat 
+port_name: port
+port_number: 8080
+nodeport_name: 30010

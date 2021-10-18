@@ -1,0 +1,14 @@
+deploy_name: my-jenkins
+app_name: myapp
+noofreplicas: 2
+template_deploy_name: jenkinsdeploy
+container_name: jenkins
+image_name: jenkins
+image_version: 2.60.2
+service_name: my-jenkins 
+port1_name: port1
+port1_number: 8080
+nodeport1_name: 30001
+port2_name: port2
+port2_number: 50000
+nodeport2_name: 30005
